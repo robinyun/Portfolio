@@ -1,18 +1,9 @@
 $(document).ready(function(){
-  var navOpen = $('#open-navigation');
-  var menu = $('.stackedMenu');
-  var menuList = $('.nav-menu-list li a');
+
   var downButton = $('.button-box-anchor');
   var push = $('.push');
   var downArrow = $('.down');
 
-  menu.click(function(){
-    navOpen.toggleClass('show');
-    $('body').toggleClass('overlay');
-    $('section').toggleClass('blur');
-    var open = navOpen.hasClass('show');
-  });
-  
   $('.smoothscroll').on('click',function (e) {
    e.preventDefault();
 
